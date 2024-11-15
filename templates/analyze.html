@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Analyzing Your Text...</title>
+        <style>
+            /* General reset for better cross-browser consistency */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Body styling */
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                color: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                padding: 20px;
+            }
+    
+            /* Container for the analyzed text section */
+            .container {
+                background: rgba(255, 255, 255, 0.85); /* Slightly transparent background for readability */
+                border-radius: 12px;
+                padding: 40px;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+                max-width: 700px;
+                width: 100%;
+                text-align: center;
+                backdrop-filter: blur(5px); /* Softens the background */
+            }
+    
+            /* Header styling */
+            h1 {
+                font-size: 2rem;
+                color: #3498db;
+                margin-bottom: 25px;
+                font-weight: bold;
+            }
+    
+            /* Paragraph styling */
+            p {
+                font-size: 1.2rem;
+                line-height: 1.8;
+                color: #444;
+                word-wrap: break-word;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    
+<body>
+    <div class="container">
+        <h1>Your Analyzed Text - {{ purpose }}</h1>
+        <p>{{ analyzed_text }}</p>
+    </div>
+</body>
+</html>
